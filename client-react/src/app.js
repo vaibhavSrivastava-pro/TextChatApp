@@ -5,6 +5,7 @@ import ChatsPage from "./chatsPage";
 
 function App() {
   const [user, setUser] = useState();
+  console.log("USER", user)
 
   if (!user) {
     return <AuthPage onAuth={(user) => setUser(user)} />;
